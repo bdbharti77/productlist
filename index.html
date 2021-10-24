@@ -8,9 +8,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/global.css">
-    
+    <title>Product list</title>
+</head>
     <div class="bd_container">
-       <div class="row"> 
+      <div class="bd_dropdown">
+         <span id="bd_selected">All</span>
+         <ul>
+             <li onclick="handleFilter('All')">All</li>
+             <li onclick="handleFilter('Matter')">Matter</li>
+             <li onclick="handleFilter('Lister')">Lister</li>
+         </ul>
+     </div>
+     
         
           <div class="bd_prodBox bd_moreBox" >
              <div class="bd_item">
@@ -200,7 +209,7 @@
           <div id="loadMore" onclick="showMore('2')">
            <span>Load More</span> 
           </div>
-       </div>
+       
     </div>
     
     <script>
@@ -219,17 +228,9 @@ const showMore =(offset) =>{
                 }
 }
 
-        // $("#loadMore").on('click', function (e) {
-        //         e.preventDefault();
-        //         $(".bd_moreBox:hidden").slice(0, 12).slideDown();
-        //         if ($(".bd_moreBox:hidden").length == 0) {
-        //             $("#loadMore").fadeOut('slow');
-        //         }
-        //     });
+const handleFilter =(sort) =>{
+$("#bd_selected").text(sort)
+    }
     </script>
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+ 
 </html>

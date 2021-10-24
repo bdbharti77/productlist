@@ -21,7 +21,44 @@ img {
     z-index: 1;
   }
   
-  
+  .bd_dropdown{
+      width: 320px;
+      border: 1px solid #ededed;
+      position: relative;
+      margin-top: 30px;
+      font-size: 13px;
+      background: url(../images/menu.png);
+      background-repeat: no-repeat;
+      background-position: 95% center;
+      background-size: 20px;
+      margin-left: 15px;
+  }
+  .bd_dropdown span{
+    padding: 8px 20px;
+    width: 100%;
+    display: block;
+
+  }
+  .bd_dropdown ul{
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      display: none;
+     top:35px;
+     list-style: none;
+     background: #fff;
+     box-shadow: 0px 3px 4px #ccc;
+     z-index: 99;
+  }
+  .bd_dropdown:hover ul{
+      display: block;
+  }
+  .bd_dropdown ul li{
+    padding: 7px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #ededed;
+    
+  }
   .isotope,
   .isotope .isotope-item {
     -webkit-transition-duration: 0.8s;

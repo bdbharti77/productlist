@@ -26,14 +26,23 @@
         });
     });
 
-
+    const handleFilter =(sort) =>{
+$("#bd_selected").text(sort)
+    }
     
 </script>
 </head>
 <body>
   
     <div class="bd_container">
-      
+      <div class="bd_dropdown">
+          <span id="bd_selected">All</span>
+          <ul>
+              <li onclick="handleFilter('All')">All</li>
+              <li onclick="handleFilter('Matter')">Matter</li>
+              <li onclick="handleFilter('Lister')">Lister</li>
+          </ul>
+      </div>
                 <div class="lazy-wrapper isotopeWrapper"></div>
           
     </div>
