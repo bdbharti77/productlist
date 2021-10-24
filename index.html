@@ -12,14 +12,14 @@
 </head>
     <div class="bd_container">
       <div class="bd_dropdown">
-         <span id="bd_selected">All</span>
+         <span id="bd_selected" onclick="handleSort()">All</span>
          <ul>
              <li onclick="handleFilter('All')">All</li>
              <li onclick="handleFilter('Matter')">Matter</li>
              <li onclick="handleFilter('Lister')">Lister</li>
          </ul>
      </div>
-     
+     <div class="clr"></div>
         
           <div class="bd_prodBox bd_moreBox" >
              <div class="bd_item">
@@ -227,9 +227,17 @@ const showMore =(offset) =>{
                     $("#loadMore").fadeOut('slow');
                 }
 }
-
+const handleSort =()=>{
+   if($(".bd_dropdown ul").css('display')==='block'){
+      $(".bd_dropdown ul").css('display','none')
+   }
+   else{
+   $(".bd_dropdown ul").css('display','block')
+   }
+}
 const handleFilter =(sort) =>{
-$("#bd_selected").text(sort)
+$("#bd_selected").text(sort);
+$(".bd_dropdown ul").css('display','none')
     }
     </script>
  

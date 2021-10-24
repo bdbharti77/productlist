@@ -27,8 +27,17 @@
         });
     });
 
-    const handleFilter =(sort) =>{
-$("#bd_selected").text(sort)
+    const handleSort =()=>{
+   if($(".bd_dropdown ul").css('display')==='block'){
+      $(".bd_dropdown ul").css('display','none')
+   }
+   else{
+   $(".bd_dropdown ul").css('display','block')
+   }
+}
+const handleFilter =(sort) =>{
+$("#bd_selected").text(sort);
+$(".bd_dropdown ul").css('display','none')
     }
     
 </script>
@@ -37,7 +46,7 @@ $("#bd_selected").text(sort)
   
     <div class="bd_container">
       <div class="bd_dropdown">
-          <span id="bd_selected">All</span>
+        <span id="bd_selected" onclick="handleSort()">All</span>
           <ul>
               <li onclick="handleFilter('All')">All</li>
               <li onclick="handleFilter('Matter')">Matter</li>
