@@ -1,0 +1,41 @@
+
+<!DOCTYPE HTML>
+<head>
+<meta charset="UTF-8">
+<title>Product list</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery.min.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.isotope.sloppy-masonry.min.js"></script>
+<script src="js/lazyloader.js"></script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="css/global.css">
+
+<script>
+    $(function(){
+        $('.lazy-wrapper').lazyLoader({
+            jsonFile: 'data/datas.json',
+            mode: 'click',
+            limit: 8,
+            offset: 1,
+            isIsotope: true,
+            isotopeResize: 4
+        });
+    });
+
+
+    
+</script>
+</head>
+<body>
+  
+    <div class="bd_container">
+      
+                <div class="lazy-wrapper isotopeWrapper"></div>
+          
+    </div>
+</body>
+</html>
