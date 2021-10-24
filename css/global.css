@@ -59,53 +59,6 @@ img {
     border-bottom: 1px solid #ededed;
     
   }
-  .isotope,
-  .isotope .isotope-item {
-    -webkit-transition-duration: 0.8s;
-       -moz-transition-duration: 0.8s;
-        -ms-transition-duration: 0.8s;
-         -o-transition-duration: 0.8s;
-            transition-duration: 0.8s;
-  }
-  
-  .isotope {
-    -webkit-transition-property: height, width;
-       -moz-transition-property: height, width;
-        -ms-transition-property: height, width;
-         -o-transition-property: height, width;
-            transition-property: height, width;
-  }
-  
-  .isotope .isotope-item {
-    -webkit-transition-property: -webkit-transform, opacity;
-       -moz-transition-property:    -moz-transform, opacity;
-        -ms-transition-property:     -ms-transform, opacity;
-         -o-transition-property:         top, left, opacity;
-            transition-property:         transform, opacity;
-  }
-  
-  
-  .isotope.no-transition,
-  .isotope.no-transition .isotope-item,
-  .isotope .isotope-item.no-transition {
-    -webkit-transition-duration: 0s;
-       -moz-transition-duration: 0s;
-        -ms-transition-duration: 0s;
-         -o-transition-duration: 0s;
-            transition-duration: 0s;
-  }
-  
-  
-  
-  
-  .isotope.infinite-scrolling {
-    -webkit-transition: none;
-       -moz-transition: none;
-        -ms-transition: none;
-         -o-transition: none;
-            transition: none;
-  }
-  
   
   #container {
     border: 1px solid #666;
@@ -226,8 +179,7 @@ img {
 }
 .bd_prodBox .bd_item {
     background: #fff;
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
+   
     max-height: 380px;
     box-shadow: 0px -2px 14px #ccc;
     min-height:380px;
@@ -250,7 +202,7 @@ img {
 
 .bd_title_bx .bd_left {
     color: #8a9fb6;
-    font-size: 14px;
+    font-size: 10px;
     position: relative;
 }
 
