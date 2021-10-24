@@ -9,7 +9,9 @@
             mode: 'scroll', // method used to load more items (click on a button or on scroll down)
             more_caption: 'Load more', // caption of the button
             isIsotope: false, // run Isotope plugin
-            isotopeResize: 4 // number of columns if isotope is enabled
+            isotopeResize: 4, // number of columns if isotope is enabled
+            effect : "slideDown",
+            effectspeed: 400000,
 		}
 	};
     
