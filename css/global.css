@@ -306,6 +306,8 @@ img {
     max-height: 256px;
     min-height: 256px;
     overflow: hidden;
+    background-size: cover;
+    background-position: center center;
 }
 .lazyContent {
     padding: 10px;
